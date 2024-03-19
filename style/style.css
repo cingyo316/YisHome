@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+  font-family: Microsoft JhengHei;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  border: 0;
+  background-image: url("../images/bg-img.jpg");
+  background-size: 100%;
+  color: #0f3692;
+}
+
+header {
+  display: flex;
+  height: 26vh;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  background-image: url("../images/bg-img.jpg");
+  opacity: 0.95;
+  box-shadow: 1rem 0 1rem rgba(84, 84, 84, 0.3);
+}
+header nav img {
+  width: 18vw;
+  margin: 1rem 2.5rem;
+  border-radius: 0.75rem;
+}
+header nav .navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul li {
+  padding: 0;
+  margin: 0px 2vw;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #0f3692;
+}
+header nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.1rem;
+  background-color: #0f3692;
+  transition: 0.7s 0.1s ease;
+}
+header nav ul li a:hover::after {
+  width: 100%;
+}
+header nav .toggler {
+  display: none;
+}
+
+main .flexslider {
+  height: 75vh;
+  background-color: rgba(255, 254, 252, 0.75);
+  border: 2px solid rgba(255, 254, 252, 0.75);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+main .flexslider ul li img {
+  margin: 0 auto;
+}
+main .about {
+  display: flex;
+  justify-content: center;
+}
+main .about div {
+  display: flex;
+  margin: 5rem 4rem;
+}
+main .about div img {
+  width: 40vw;
+  height: 40vw;
+}
+main .about div div {
+  display: block;
+  margin: 1.5rem;
+}
+main .about div div h3 {
+  margin-top: 0;
+  margin-left: 0.5rem;
+}
+main .about div div p {
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  text-align: justify;
+}
+main .title {
+  margin: 3rem 0;
+}
+main .title h2 {
+  text-align: center;
+}
+main .title h2::after {
+  content: "";
+  display: block;
+  width: 9.5rem;
+  height: 0.15rem;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin: 0 0 0 -76px;
+  background-color: #0f3692;
+}
+main .popular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+main .popular .popular-items {
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .popular .popular-items div {
+  margin: 1rem 0;
+  width: 250px;
+}
+main .popular .popular-items div img {
+  width: 250px;
+  padding: 0.5rem 1rem;
+}
+main .popular .popular-items div p {
+  text-align: center;
+}
+main .items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+main .items div {
+  margin: 2rem 0.5rem;
+  width: 250px;
+}
+main .items div:hover {
+  opacity: 0.85;
+  color: rgb(237, 164, 28);
+  cursor: pointer;
+  transition: 0.3s 0.1s ease;
+}
+main .items div img {
+  width: 250px;
+  padding: 0.5rem 1rem;
+}
+main .items p {
+  margin: 0.25rem 0;
+  text-align: center;
+}
+main .container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+main .container .qa-items {
+  background-color: rgba(222, 222, 222, 0.6);
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 60vw;
+}
+main .container .qa-items h3 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+main .container .qa-items p {
+  margin: 0;
+  padding: 0.5rem 0;
+  width: 58vw;
+}
+main .container .qa-items .qa {
+  display: none;
+}
+main .container .qa-items .show {
+  display: block;
+}
+main .container div {
+  display: block;
+}
+main .container div p {
+  margin-bottom: 0;
+  padding-left: 2rem;
+  width: 67vw;
+}
+main .container div input {
+  width: 60vw;
+  height: 2rem;
+  margin-left: 2rem;
+}
+main .container div textarea {
+  width: 60vw;
+  height: 10rem;
+  margin-left: 2rem;
+  resize: none;
+}
+main .container div .btn {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 3.5rem;
+}
+main .container div .btn button {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  color: #0f3692;
+  background-color: transparent;
+  border: 1px solid #0f3692;
+}
+main .container div .btn button:hover {
+  background-color: #0f3692;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s 0.05s ease;
+}
+main .news {
+  display: flex;
+  justify-content: center;
+}
+main .news ul {
+  list-style: none;
+  margin-bottom: 5rem;
+  padding: 0;
+}
+main .news li {
+  width: 56vw;
+  margin: 1rem 0;
+  border-bottom: 1px dashed #0f3692;
+}
+main .news li:hover {
+  color: rgb(237, 164, 28);
+  cursor: pointer;
+  transition: 0.3s 0.1s ease;
+}
+main .news li p,
+main .news li h6 {
+  margin: 0.5rem 0;
+  width: 57vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(222, 222, 222, 0.5);
+  padding: 2rem;
+  font-size: 1rem;
+}
+footer .footer {
+  display: block;
+}
+footer .footer div h3,
+footer .footer div p {
+  margin: 0.3rem;
+}
+footer .link {
+  display: flex;
+  margin-top: 1rem;
+}
+footer .link img {
+  width: 2rem;
+  margin: 0.5rem;
+}
+
+@media (max-width: 675px) {
+  header nav a img {
+    width: 9rem;
+    margin: 1rem 2.5rem 0.5rem 1rem;
+  }
+  header nav .navbar {
+    display: block;
+    background-color: #0f3692;
+    position: fixed;
+    left: -50vw;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    transition: all 0.3s ease;
+  }
+  header nav .navbar ul {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+  }
+  header nav .navbar ul li {
+    margin: 5vw;
+  }
+  header nav .navbar ul li a {
+    color: white;
+  }
+  header nav .navbar ul li a:hover {
+    color: rgb(237, 164, 28);
+    transition: all 0.3s ease;
+  }
+  header nav .toggler {
+    display: block;
+    width: 200px;
+    height: 95px;
+    border: none;
+    padding: 0;
+    margin-left: 15rem;
+    background-color: transparent;
+  }
+  header nav .toggler:hover {
+    cursor: pointer;
+  }
+  header nav .line {
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #0f3692;
+  }
+  header nav .line::before, header nav .line::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #0f3692;
+    position: absolute;
+  }
+  header nav .line::before {
+    bottom: 40px;
+  }
+  header nav .line::after {
+    top: 37px;
+  }
+  header nav .lineChange {
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #0f3692;
+  }
+}
+@media (max-width: 900px) {
+  main .about div {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .about div img {
+    width: 60vw;
+    height: 60vw;
+  }
+  main .about div div {
+    margin: 1.5rem 1rem 1.5rem 1rem;
+    width: 60vw;
+  }
+}/*# sourceMappingURL=style.css.map */

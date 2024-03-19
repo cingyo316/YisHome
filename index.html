@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>依家甜食</title>
+		<!-- jQuery -->
+		<link
+			href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".flexslider").flexslider({
+					animation: "fade",
+					slideshowSpeed: "5000",
+				});
+			});
+		</script>
+		<!-- css -->
+		<link rel="stylesheet" href="./style/style.css" />
+		<link rel="icon" href="./images/favicon.ico" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="./index.html">
+					<img src="./images/logo.jpg" alt="logo" />
+				</a>
+				<div class="navbar">
+					<ul>
+						<li><a href="./news.html">最新消息</a></li>
+						<li><a href="./items.html">商品一覽</a></li>
+						<li><a href="./qa.html">常見問題</a></li>
+						<li><a href="./info.html">聯絡我們</a></li>
+					</ul>
+				</div>
+				<button id="navbarChange" class="toggler">
+					<div class="line"></div>
+				</button>
+			</nav>
+		</header>
+
+		<main>
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img
+							src="./images/roll-1.jpg"
+							alt=""
+							style="height: 75vh; width: auto"
+						/>
+					</li>
+					<li>
+						<img
+							src="./images/roll-2.jpg"
+							alt=""
+							style="height: 75vh; width: auto"
+						/>
+					</li>
+					<li>
+						<img
+							src="./images/roll-3.jpg"
+							alt=""
+							style="height: 75vh; width: auto"
+						/>
+					</li>
+				</ul>
+			</div>
+
+			<div class="about">
+				<div>
+					<img src="./images/about.jpg" alt="關於依家甜食" />
+					<div>
+						<h3>關於我們</h3>
+						<p>這裡是「依家甜食」，帶來一口幸福的甜點。</p>
+						<p>
+							我是一個從小就喜歡吃甜食的人，因為愛吃，唸了餐飲科系，去歐洲讀了飯店管理。
+						</p>
+						<p>
+							最喜歡到各種不同餐廳，吃各式各樣的甜點，或是在家埋著頭做點心。
+						</p>
+						<p>想試著用自己的方法，去詮釋甜點不同的風貌。</p>
+						<p>
+							依家甜食中的「依」，是女兒的名字。以女兒作為命名，將她帶給我的幸福用甜點分享出去。
+						</p>
+						<p>希望大家品嚐甜點時，也可以跟我一樣獲得滿滿幸福。</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="title">
+				<h2>人氣商品</h2>
+			</div>
+
+			<div class="popular">
+				<div class="popular-items">
+					<div>
+						<img src="./images/item-1.jpg" alt="可麗露" />
+						<p>可麗露</p>
+					</div>
+					<div>
+						<img src="./images/item-2.jpg" alt="檸檬塔" />
+						<p>檸檬塔</p>
+					</div>
+					<div>
+						<img src="./images/item-3.png" alt="香草焦糖布丁" />
+						<p>香草焦糖布丁</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer">
+				<div>
+					<h3>依家甜食 Yi's home</h3>
+					<p>email : Yishome2022@gmail.com</p>
+					<p>關注我們</p>
+				</div>
+
+				<div class="link">
+					<a
+						href="https://www.facebook.com/profile.php?id=100077838758689"
+						target="_blank"
+						rel="noopener"
+					>
+						<img
+							src="./images/facebook_174848.png"
+							alt="Facebook"
+						/>
+					</a>
+					<a href="" target="_blank" rel="noopener">
+						<img src="./images/line_5968784.png" alt="Line" />
+					</a>
+					<a
+						href="https://instagram.com/yis.home?igshid=MmU2YjMzNjRlOQ=="
+						target="_blank"
+						rel="noopener"
+					>
+						<img
+							src="./images/instagram_2111463.png"
+							alt="Instagram"
+						/>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
