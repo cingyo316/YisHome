@@ -71,15 +71,11 @@ header {
 
 main {
 	.flexslider {
-		height: 75vh;
 		background-color: rgba(255, 254, 252, 0.75);
 		border: 2px solid rgba(255, 254, 252, 0.75);
 		overflow: hidden;
 		position: relative;
 		z-index: 1;
-		ul li img {
-			margin: 0 auto;
-		}
 	}
 
 	.about {
@@ -300,8 +296,9 @@ footer {
 	header {
 		nav {
 			a img {
-				width: 9rem;
-				margin: 1rem 2.5rem 0.5rem 1rem;
+				width: 20vw;
+				// height: 15vw;
+				margin: 1rem 0 0.5rem 1.5rem;
 			}
 
 			.navbar {
@@ -331,33 +328,32 @@ footer {
 			}
 			.toggler {
 				display: block;
-				width: 200px;
-				height: 95px;
+				height: 90px;
 				border: none;
 				padding: 0;
-				margin-left: 15rem;
+				margin-left: 60vw;
 				background-color: transparent;
 				&:hover {
 					cursor: pointer;
 				}
 			}
 			.line {
-				width: 25px;
+				width: 23px;
 				height: 2px;
-				margin: 0 auto;
+				margin: 0;
 				background-color: $themeColor;
 				&::before,
 				&::after {
 					content: "";
 					display: block;
-					width: 25px;
+					width: 23px;
 					height: 2px;
 					margin: 0 auto;
 					background-color: $themeColor;
 					position: absolute;
 				}
 				&::before {
-					bottom: 40px;
+					bottom: 37px;
 				}
 				&::after {
 					top: 37px;
