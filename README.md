@@ -1,4 +1,6 @@
-# 依家甜食 / Yi's Home  https://cingyo316.github.io/YisHome/
+# 依家甜食 / Yi's Home 
+  前往網站:  https://cingyo316.github.io/YisHome/
+  
   Yi's Home是一個純前端的響應是網站，主要內容是介紹依家甜食這間甜點店。
   分為首頁、最新消息、商品一覽、常見問題、聯絡我們共5個部分。
   
